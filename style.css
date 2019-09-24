@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Asap"), url("./assets/fonts/Asap-Regular.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Lucida Sans Regular";
   font-style: normal;
   font-weight: normal;
@@ -58,7 +65,7 @@ header {
 
 .navbar ul {
   display: flex;
-  background-image: url("assets/images/navbar.svg");
+  background: url("assets/images/navbar.svg") no-repeat;
 }
 
 .navbar ul li {
@@ -105,4 +112,33 @@ header {
 .contacts {
   width: 146px;
   margin-left: 0;
+}
+
+.center-content {
+  padding-left: 10px;
+  display: flex;
+}
+
+.video-text {
+  padding-top: 80px;
+  padding-left: 38px;
+}
+
+.video-text p {
+  font-size: 63px;
+  letter-spacing: 1px;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.the-cool {
+  color: #f5c506;
+}
+
+.the-minimal {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #ffffff;
 }
