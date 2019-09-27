@@ -363,8 +363,9 @@ header {
   background-color: rgb(221, 177, 1);
 }
 
-.time time {
+.time p {
   display: flex;
+  flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -378,7 +379,7 @@ header {
   letter-spacing: 1px;
 }
 
-.time time span {
+.time p span {
   font-size: 21px;
   line-height: 38px;
   font-family: "Segoe UI Regular", sans-serif;
