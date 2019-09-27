@@ -1,33 +1,46 @@
 @font-face {
-  font-family: "Segoe WP";
   font-style: normal;
   font-weight: normal;
+  font-family: "Segoe WP";
+
   src: local("Segoe WP"), url("./assets/fonts/SegoeWP.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Asap";
   font-style: normal;
   font-weight: normal;
+  font-family: "Asap";
+
   src: local("Asap"), url("./assets/fonts/Asap-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Lucida Sans Regular";
   font-style: normal;
   font-weight: normal;
+  font-family: "Lucida Sans Regular";
+
   src: local("Lucida Sans Regular"), url("./assets/fonts/LSANS.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Segoe UI Regular";
   font-style: normal;
   font-weight: normal;
+  font-family: "Segoe UI Regular";
+
   src: local("Segoe UI Regular"), url("./assets/fonts/Segoe UI.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PT Sans";
+
+  src: url("./assets/fonts/PTS55F-webfont.woff") format("woff");
 }
 
 body {
   max-width: 1300px;
+
   background-image: url("./assets/images/header-background.png");
   background-repeat: no-repeat;
 }
@@ -39,8 +52,8 @@ body {
 
 header {
   display: flex;
-  height: 140px;
   justify-content: space-between;
+  height: 140px;
   margin-top: 28px;
 }
 
@@ -49,58 +62,63 @@ header {
   justify-content: center;
 }
 
-.logo img{
+.logo img {
   margin-top: -1px;
 }
 
 .logo h1 {
   display: inline-block;
+  margin-left: 4px;
+
+  font-style: italic;
   font-size: 41px;
   line-height: 94px;
-  margin-left: 4px;
-  color: #ffffff;
   font-family: "Lucida Sans", sans-serif;
-  font-style: italic;
   text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 .navbar {
-  height: 50px;
   width: 462px;
+  height: 50px;
   margin-top: 34px;
 }
 
 .navbar ul {
   display: flex;
+
   background: url("assets/images/navbar.svg") no-repeat;
 }
 
 .navbar ul li {
   display: block;
   margin-top: 9px;
-  border-right: 1px solid #b99403;
 
-  text-align: center;
   line-height: 41px;
+  text-align: center;
+
+  border-right: 1px solid #b99403;
 }
 
 .navbar img {
   height: 100%;
-  vertical-align: middle;
   padding-right: 8px;
+
+  vertical-align: middle;
 }
 
 .navbar a {
   height: 100%;
-  vertical-align: middle;
+
   font-size: 17px;
-  letter-spacing: 0px;
-  color: #9b7d08;
   font-family: "Segoe WP", sans-serif;
-  text-decoration: none;
+  vertical-align: middle;
+  color: #9b7d08;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 
 .navbar a:hover {
@@ -125,9 +143,8 @@ header {
 }
 
 .center-content {
-  padding-left: 10px;
-  margin-bottom: 68px;
   display: flex;
+  padding-left: 10px;
 }
 
 .video-text {
@@ -136,12 +153,12 @@ header {
 }
 
 .video-text p {
-  font-size: 63px;
-  letter-spacing: 1px;
-  font-family: "Asap", sans-serif;
   font-weight: 400;
+  font-size: 63px;
+  font-family: "Asap", sans-serif;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .the-cool {
@@ -151,17 +168,20 @@ header {
 .the-minimal {
   padding-top: 12px;
   padding-left: 12px;
+
   color: #ffffff;
 }
 
-.side-buttons{
+.side-buttons {
   position: relative;
 }
 
-.left-button, .right-button {
+.left-button,
+.right-button {
   position: absolute;
   top: 132px;
 }
+
 .right-button {
   right: 0;
 }
@@ -170,42 +190,52 @@ header {
   left: 0;
 }
 
+.separator {
+  height: 68px;
+}
+
 .columns-background {
   background: url("./assets/images/columns-background.png") no-repeat;
 }
 
 .wrapper.row-icons {
-  box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0 0;
   justify-content: center;
+  box-sizing: border-box;
   height: 211px;
+
+  grid-gap: 0 0;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .row-icons .nav-icon {
-  box-sizing: border-box;
   display: grid;
-  grid-template-rows: 70% 30%;
-  grid-gap: 0 0;
+  box-sizing: border-box;
+
   border: 1px solid rgba(0, 0, 0, 0.14);
+
+  grid-gap: 0 0;
+  grid-template-rows: 70% 30%;
 }
 
 .img-icon {
   display: grid;
-  justify-items: center;
   align-content: end;
   margin-bottom: 15px;
+
+  justify-items: center;
 }
-.nav-icon h3{
+
+.nav-icon h3 {
   display: inline-block;
-  font-size: 27px;
-  letter-spacing: 0;
-  color: #000000;
-  font-family: "Segoe UI Regular", sans-serif;
+
   font-weight: 300;
+  font-size: 27px;
+  font-family: "Segoe UI Regular", sans-serif;
   text-align: center;
+  color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .nav-icon.better-design h3 {
@@ -225,14 +255,316 @@ header {
 }
 
 .customise .img-icon img {
-  margin: 0 0px 2px 22px;
+  margin: 0 0 2px 22px;
 }
 
 .its-free .img-icon img {
-  margin: 0px 21px -3px 0px;
+  margin: 0 21px -3px 0;
 }
 
+.section1-background {
+  height: 510px;
 
+  background-image: url("./assets/images/section1-background.png");
+}
 
+.section1-background .wrapper {
+  height: 100%;
+}
 
+.section1-background h2 {
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 111px;
+  font-family: "pt_sansregular", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -2.4px;
+}
 
+.section1-columns {
+  display: flex;
+}
+
+.video2-text {
+  position: relative;
+
+  width: 340px;
+  height: 234px;
+
+  background-color: rgb(236, 158, 3);
+}
+
+.video2-text .plus {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+}
+
+.video2-text p {
+  padding: 17px 0 0 28px;
+
+  font-weight: 300;
+  font-size: 29px;
+  line-height: 38px;
+  font-family: "Segoe WP", sans-serif;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.twitter {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 328px;
+  height: 234px;
+  margin-left: 35px;
+
+  background-color: rgb(236, 158, 3);
+}
+
+.twitter img {
+  margin-top: 19px;
+}
+
+.twitter p {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 38px;
+  font-family: "Segoe WP", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.twitter .plus {
+  position: absolute;
+  right: 8px;
+  bottom: 14px;
+}
+
+.twitter img.plus:hover,
+.video2-text img.plus:hover {
+  width: 22px;
+  height: 22px;
+
+  background-color: #f7ff35;
+}
+
+.time {
+  width: 112px;
+  height: 86px;
+
+  background-color: rgb(221, 177, 1);
+}
+
+.time time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0 0 4px;
+
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 38px;
+  font-family: "Segoe UI Regular", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.time time span {
+  font-size: 21px;
+  line-height: 38px;
+  font-family: "Segoe UI Regular", sans-serif;
+  color: #b26529;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.section2-background {
+  height: 495px;
+
+  background-image: url("./assets/images/section2-background.png");
+}
+
+.section2-background h2 {
+  width: 600px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 43px;
+  font-family: "PT Sans", serif;
+  color: #f5c506;
+  text-transform: uppercase;
+}
+
+.section2-background .wrapper {
+  padding-top: 43px;
+}
+
+.section1-background form {
+  width: 908px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+  height: 15px;
+
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  outline: none;
+  opacity: 0.48;
+
+  -webkit-transition: 0.2s;
+          transition: opacity 0.2s;
+
+  -webkit-appearance: none;
+}
+
+.device-container {
+  display: flex;
+}
+
+.device-container .devices img {
+  position: relative;
+  left: -6px;
+}
+
+.device-container .list {
+  padding: 70px 68px;
+  padding-right: 0;
+
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #a9a9a7;
+  letter-spacing: 0;
+}
+
+.shadow-top {
+  -webkit-box-shadow: inset 0 -5px 6px 0 rgba(0, 0, 0, 0.17);
+     -moz-box-shadow: inset 0 -5px 6px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: inset 0 -5px 6px 0 rgba(0, 0, 0, 0.17);
+}
+
+.shadow-center-el {
+  -webkit-box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.30);
+     -moz-box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.30);
+          box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.30);
+}
+
+.shadow-bottom {
+  -webkit-box-shadow: inset 0 -3px 4px 0 rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: inset 0 -3px 4px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0 -3px 4px 0 rgba(0, 0, 0, 0.75);
+}
+
+.device-container .list li {
+  margin: 16px 0;
+
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.device-container .list li::before {
+  content: "\2022";
+  position: relative;
+  top: 10px;
+
+  display: inline-block;
+  width: 30px;
+
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 22px;
+  color: #f5c506;
+}
+
+footer {
+  height: 65px;
+
+  background-color: rgb(76, 76, 76);
+}
+
+footer div.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-logo {
+  position: relative;
+
+  width: 54px;
+  height: 54px;
+}
+
+.footer-logo img {
+  position: absolute;
+
+  margin: 0 auto;
+}
+
+.logo-footer-normal {
+  top: 0;
+  left: 0;
+}
+
+.logo-footer-less {
+  top: 1px;
+  left: 1px;
+}
+
+footer p {
+  display: inline-block;
+  margin: 5px 0 0 6px;
+
+  font-style: italic;
+  font-size: 29px;
+  font-family: "Lucida Sans Regular", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 200px;
+  height: 15px;
+
+  background: #ec9e03;
+  border-radius: 10px;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 200px;
+  height: 15px;
+
+  background: #ec9e03;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  width: 200px;
+  height: 15px;
+
+  background: #ec9e03;
+  border-radius: 10px;
+  cursor: pointer;
+}
