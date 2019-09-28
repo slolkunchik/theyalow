@@ -56,15 +56,20 @@
         <div class="center-content">
           <div class="video-content">
             <video class="video-1" src="#" poster="assets/images/video-placeholder.jpg" width="549" height="327" controls>
-              Main video
+              Main video not supported
             </video>
-            <!-- <video class="video-1-m" src="assets/test.mp4" poster="assets/images/mobile/video-placeholder-m.jpg" width="640" height="327"></video>-->
+            <video class="video-1-mobile" src="#" poster="assets/images/video-placeholder-m.jpg" width="640" height="327">
+              Main video for mobile not supported
+            </video>
           </div>
 
           <div class="video-text">
             <p class="the-cool">The cool</p>
             <p class="the-minimal">The minimal</p>
           </div>
+          <div class="transparent-row hidden-for-pc"></div>
+          <div class="transparent-row2 hidden-for-pc"></div>
+
         </div>
       </div>
 
@@ -73,7 +78,8 @@
       <div class="columns-background">
         <div class="wrapper row-icons">
           <div class="nav-icon better-design">
-            <div class="img-icon"><img src="assets/images/better-design-icon.svg" width="110" height="75" alt="better-design"></div>
+            <div class="img-icon"><img src="assets/images/better-design-icon.svg" width="110" height="75"
+                                       alt="better-design"></div>
             <h3>Better design</h3>
           </div>
           <div class="nav-icon customise">
@@ -91,24 +97,45 @@
         <section class="wrapper">
           <h2>Lorem ipsum dolor sit amet</h2>
           <div class="section1-columns">
-            <div class="video2-text">
-              <img class="plus" src="assets/images/plus-shape.svg" width="12" height="12" alt="plus">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="mobile-row-video">
+              <div class="video2-text">
+                <img class="plus" src="assets/images/plus-shape.svg" width="12" height="12" alt="plus">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+              </div>
+              <video class="video-2" src="#" poster="./assets/images/video-placeholder2.jpg" width="315" height="232"
+                     controls>
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <video class="video-2" src="#" poster="./assets/images/video-placeholder2.jpg" width="314" height="231"
-                   controls>
-              Your browser does not support the video tag.
-            </video>
             <div class="twitter">
-              <p>22</p>
-              <img src="assets/images/twitter.svg" width="164" height="134" alt="twitter">
-              <img class="plus" src="assets/images/plus-shape.svg" width="12" height="12" alt="plus">
+              <p class="hidden-for-mobile">22</p>
+              <div class="bird">
+                <img src="assets/images/twitter.svg" width="164" height="134" alt="twitter">
+              </div>
+              <img class="plus hidden-for-mobile" src="assets/images/plus-shape.svg" width="12" height="12" alt="plus">
+              <div class="hidden-for-pc tweets">
+                <p class="first-tweet"> <span>Daily Mobile UI Design Inspiration #1
+                      <br>
+                      via @cssauthor </span></p>
+                <p class="second-tweet"> <span> Daily Mobile UI Design Inspiration #1
+                      <br>
+                      via @cssauthor </span></p>
+                <p class="third-tweet"> <span> Daily Mobile UI Design Inspiration #1
+                      <br>
+                      via @cssauthor</span></p>
+                <div class="tweet-inputs-container">
+                  <form>
+                    <input class="input-tweet-text" type="text"><input class="input-tweet-button" type="button"
+                                                                       value="Tweet">
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="time">
             <p>25<br><span>april</span></p>
           </div>
-          <form action="#">
+          <form class="form-slider hidden-for-mobile" action="#">
             <input class="slider" type="range" name="message" min="0" max="5" value="2">
           </form>
         </section>
@@ -118,8 +145,11 @@
         <section class="wrapper">
           <h2>Lorem ipsum dolor sit amet</h2>
           <div class="device-container">
-            <div class="devices"><img src="assets/images/devices.png" width="570" height="307" alt="devices"></div>
-            <div class="list">
+            <div class="devices hidden-for-mobile"><img src="assets/images/devices.png" width="570" height="307"
+                                                        alt="devices"></div>
+            <div class="devices hidden-for-pc"><img src="assets/images/devices-mobile.png" width="569" height="295"
+                                                    alt="devices"></div>
+            <div class="list hidden-for-mobile">
               <ul>
                 <li>Sed ut perspiciatis unde omnis</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
@@ -134,9 +164,15 @@
     </main>
     <footer>
       <div class="wrapper">
-        <div class="footer-logo">
-          <img class="logo-footer-less" src="./assets/images/footer-logo-opacity.svg" width="51" height="51" alt="logo part">
+        <div class="footer-logo hidden-for-mobile">
+          <img class="logo-footer-less" src="./assets/images/footer-logo-opacity.svg" width="51" height="51"
+               alt="logo part">
           <img class="logo-footer-normal" src="./assets/images/footer-logo.svg" width="54" height="54" alt="logo part">
+        </div>
+        <div class="footer-logo hidden-for-pc">
+          <img class="logo-footer-less" src="./assets/images/footer-logo-opacity.svg" width="31" height="31"
+               alt="logo part">
+          <img class="logo-footer-normal" src="./assets/images/footer-logo.svg" width="32" height="32" alt="logo part">
         </div>
         <p>theyalow</p>
       </div>
