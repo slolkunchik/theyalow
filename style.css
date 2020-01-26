@@ -56,7 +56,8 @@
 
 @media (min-width: 641px) {
   body {
-    max-width: 1300px;
+    min-width: 1300px;
+    margin: 0 auto;
 
     background-image: url("./assets/images/header-background.png");
     background-repeat: no-repeat;
@@ -597,7 +598,7 @@
 
 @media (max-width: 640px) {
   body {
-    max-width: 640px;
+    min-width: 640px;
   }
 
   header {
